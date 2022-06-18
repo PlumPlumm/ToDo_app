@@ -138,10 +138,20 @@ a:hover {
 .sidebar__taskItem:hover {
   background-color: #DCF5E6;
 }
+.sidebar__text {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
 .sidebar__createTask {
   color: #B6B6B6;
   font-weight: 400;
   line-height: 28px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .taskTodo {

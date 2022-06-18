@@ -50,10 +50,15 @@
         background-color: $secondary;
     }
 
+    &__text{
+        user-select: none;
+    }
+
     &__createTask{
         color: $inactive;
         font-weight: 400;
         line-height: 28px;
+        user-select: none;
 
     }
 }
