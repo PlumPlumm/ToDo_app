@@ -43,11 +43,23 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        border-top: 2px solid $accent;
-        border-bottom: 2px solid $accent;
+        transition: all 0.3s;
+    }
+
+    &__taskItem:hover{
+        background-color: $secondary;
+    }
+
+    &__createTask{
+        color: $inactive;
+        font-weight: 400;
+        line-height: 28px;
+
     }
 }
 
+
+//Окно списка подзадач
 .taskTodo{
     background-color: $secondary;
     width: 65%;

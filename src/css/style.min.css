@@ -131,8 +131,17 @@ a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-top: 2px solid #07C7A4;
-  border-bottom: 2px solid #07C7A4;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.sidebar__taskItem:hover {
+  background-color: #DCF5E6;
+}
+.sidebar__createTask {
+  color: #B6B6B6;
+  font-weight: 400;
+  line-height: 28px;
 }
 
 .taskTodo {
