@@ -8,6 +8,12 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
 html, body{
     height: 100%;
     width: 100%;

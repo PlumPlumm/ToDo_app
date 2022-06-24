@@ -33,7 +33,7 @@
                     </div>
                     <nav class="sidebar__task">
                         <ul class="sidebar__taskList">
-                            <!-- <li class="sidebar__taskItem">
+                    <!-- <li class="sidebar__taskItem">
                                 <p class="sidebar__text">хуй хуй хуй хуй</p>
                                 <input class="sidebar__del" onclick="delTask" type="image" src="./images/trash.svg" alt="Удалить задачу">
                             </li> -->
@@ -44,11 +44,19 @@
                     </nav>
                 </section>
                 <section class="taskTodo">
-                    <div class="taskTodo__container">
-                        <h1 class="taskTodo__title">Название задачи</h1>
-                        <div class="taskTodo__content">
-                            Напишу
-                        </div>
+                    <h1 class="taskTodo__title">Туту пишется с JS</h1>
+                    <div class="taskTodo__content">
+                        <input class="taskTodo__input" type="text"  placeholder="Что надо сделать?">
+                        <ul class="list">
+                            <li class="list__item">
+                                <div class="taskTodo__container">
+                                    <div class="list__checkbox">
+                                        <input class="list__input" type="checkbox" id="checkbox_1" value="true">
+                                        <label class="list__label" for="checkbox_1">Купить хуй</label>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </section>
             </div>
