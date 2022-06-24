@@ -76,9 +76,71 @@
 
     &__container{
         width: 90%;
-        padding-top: 42px;
         margin: 0 auto;
     }
+
+    &__title{
+        min-height: 34px;
+        padding-top: 42px;
+    }
+
+    &__content{
+        padding-top: 40px;
+        font-weight: 400;
+        line-height: 25px;
+        color: $colorBtn;
+    }
+
+    &__input{
+        width: 100%;
+        padding: 10px 2em;
+    }
+}
+
+.list{
+    padding-top: 42px;
+
+    &__checkbox{
+        position: relative;
+    }
+
+    &__item{
+        border-top: 2px solid $accent;
+        border-bottom: 2px solid $accent;
+        padding: 8px 0;
+    }
+
+    &__input{
+        position: absolute;
+        -webkit-appearance: none;
+        appearance: none;
+    }
+
+    &__input:checked + .list__label::before{
+        background-color: $accent;
+    }
+
+    &__label{
+        display: block;
+        width: 100%;
+        padding-left: 30px;
+    }
+
+    &__label:before{
+        content: "";
+        display: block;
+        width: 20px;
+        height: 20px;
+        border: 1px solid $inactive;
+        border-radius: 50%;
+        position: absolute;
+        background-color: $white;
+        top: 3px;
+        left: 0;
+        z-index: 1;
+    }
+
+
 }
 
 
