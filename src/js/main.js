@@ -3,6 +3,21 @@ const sidebarList = document.querySelector('.sidebar__taskList');
 
 
 let totalTask = 0;
+
+//Конструктор задач
+function Task(taskName){
+    this.taskName = taskName;
+    this.taskList = [];
+}
+
+//Конструктор списка в задачи
+function TaskList(description){
+    this.description = description;
+    this.completed = false;
+}
+
+
+
 //Создание задачи
 function createTask(){
 //Вывод окна naveform
@@ -22,7 +37,7 @@ function createTask(){
     const nameForm_btnClose = document.getElementById('btnClose');
     const nameForm_input = document.querySelector('.nameform__input');
 
-    
+    //Сохранить
     nameForm_btnSave.onclick = () => {
         let nameTask = nameForm_input.value;
         let taskBlock = document.createElement('li');
@@ -35,7 +50,7 @@ function createTask(){
         sidebarList.prepend(taskBlock);
         nameForm.remove();
     }
-
+    //Отмена
     nameForm_btnClose.onclick = () => {
         nameForm.remove();
     }
